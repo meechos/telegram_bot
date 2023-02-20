@@ -13,7 +13,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 
-@dataclasses.dataclasses
+@dataclasses.dataclass
 class Args:
     greeting: str = ""
     bot_id: str = ""

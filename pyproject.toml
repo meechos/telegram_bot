@@ -9,7 +9,7 @@ packages = [{include = "good_bot"}]
 
 [tool.poetry.dependencies]
 python = "^3.7"
-python-telegram-bot = "~20.1"
+python-telegram-bot = "~13.0"
 
 
 [tool.poetry.scripts]
