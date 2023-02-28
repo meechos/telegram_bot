@@ -17,3 +17,6 @@ ENV/
 .vscode/
 .idea/
 *.swp
+
+# poetry
+poetry.lock

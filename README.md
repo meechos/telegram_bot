@@ -10,15 +10,15 @@ Good Bot is a Python package for creating a Telegram bot that automatically send
 
 To use Good Bot, you'll need to have Python 3 installed on your computer. Follow these steps to set up and run the bot:
 
-1. Clone the repository and navigate to the project directory:\
+1. Clone the repository and navigate to the project directory
     ```bash
-    git clone https://github.com/meechos/good-bot.git
-    cd good-bot
+    git clone https://github.com/meechos/telegram_bot
+    cd telegram_bot
     ```
-2. Install the required packages using pip:\
+2. Install the required packages using `poetry`
 
     ```bash
-    pip install -r requirements.txt
+    poetry install
     ```
 
 3. Create a new bot on Telegram and obtain its API token.
@@ -28,7 +28,7 @@ To use Good Bot, you'll need to have Python 3 installed on your computer. Follow
 5. Start the bot with the following command:
 
     ```
-    python3 good_bot.py --bot_id <API_TOKEN> --chat_id <CHAT_ID> --greeting "Welcome to the chat, "
+    poetry run good_bot --bot_id <API_TOKEN> --chat_id <CHAT_ID> --greeting "Welcome to the chat, "
     ```
 
 Replace `<API_TOKEN>` with your bot's API token and `<CHAT_ID>` with the ID of the chat where you want the bot to welcome new users. You can customize the greeting message by changing the value of the `--greeting` option.

@@ -1,0 +1,40 @@
+[tool.poetry]
+name = "good_bot"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "good_bot"}]
+
+
+[tool.poetry.dependencies]
+python = "^3.7"
+python-telegram-bot = "~13.0"
+
+
+[tool.poetry.dev-dependencies]
+mypy = "^1.0"
+black = "^23"
+isort = "^5"
+
+
+[tool.poetry.scripts]
+good_bot = "good_bot.cli:main"
+
+
+[tool.black]
+include = ".pyi?$"
+line-length = 120
+
+
+[tool.mypy]
+packages = ["good_bot"]
+disallow_incomplete_defs = true
+pretty = true
+warn_return_any = true
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
